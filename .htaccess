@@ -1,0 +1,11 @@
+<IfModule mod_headers.c>
+    # Prevent caching for CSS files
+    <FilesMatch "\.(css)$">
+        Header set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
+    </FilesMatch>
+
+    # Enable long-term caching for image files
+    <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|ico)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+</IfModule>

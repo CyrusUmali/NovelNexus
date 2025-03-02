@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayMaya Test</title>
+</head>
+
+<body>
+    <h1>PayMaya Payment Gateway Test</h1>
+    <button id="payNowButton">Pay Now</button>
+
+    <script>
+        const publicKey = 'pk-Z0OSzLvIcOI2UIvDhdTGVVfRSSeiGStnceqwUE7n0Ah'; // Your Sandbox Public API Key
+
+        // Initialize PayMaya Checkout
+        const payNowButton = document.getElementById('payNowButton');
+        payNowButton.addEventListener('click', () => {
+            const checkoutUrl = 'https://pg-sandbox.paymaya.com/checkout/v1/checkouts'; // PayMaya Sandbox API endpoint
+            const payload = {
+                requestReferenceNumber: '123456789', // Unique reference number for the transaction
+                totalAmount: {
+                    value: 1000.0, // The amount to be paid
+                    currency: 'PHP' // Currency in PHP
+                },
+                buyer: {
+                    firstName: 'John',
+                    lastName: 'Doe',
+                    email: 'johndoe@example.com',
+                    contact: {
+                        phone: '+639171234567'
+                    },
+                    billingAddress: {
+                        line1: 'Address Line 1',
+                        city: 'City',
+                        countryCode: 'PH' // Philippines
+                    }
+                },
+                redirectUrl: {
+                    success: 'https://yourwebsite.com/success', // Redirect URL after successful payment
+                    failure: 'https://yourwebsite.com/failure', // Redirect URL if payment fails
+                    cancel: 'https://yourwebsite.com/cancel' // Redirect URL if the payment is canceled
+                }
+            };
+
+            // Send a POST request to create a checkout session
+            fetch(checkoutUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Basic ${btoa(publicKey)}` // Authorization using your public API key
+                },
+                body: JSON.stringify(payload)
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.redirectUrl) {
+                        // Redirect the user to the PayMaya checkout page
+                        window.location.href = data.redirectUrl;
+                    } else {
+                        console.error('Error creating checkout session:', data);
+                    }
+                })
+
+                .catch(error => console.error('Error:', error));
+        });
+    </script>
+</body>
+
+</html>
