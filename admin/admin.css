@@ -195,8 +195,7 @@ body {
 
 .admin-main .header .search-bar {
 
-    background-color: var(--container-color);
-    smoke;
+    background-color: var(--container-color); 
 
     width: 400px;
     border-radius: 33px;
@@ -229,7 +228,7 @@ body {
     width: 100%;
     /* padding: 24px; */
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: scroll; 
 
 }
 
@@ -260,27 +259,7 @@ body {
     flex-direction: column;
     gap: 5px;
 }
-
-/* .admin-main .content .dashboard .piegraph {
-
-    height: 500px;
-    width: 500px;
-
-}
-
-.admin-main .content .dashboard .lower-block {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-
-} */
-
-
-
-
-/* DashBoard  >>>>>>>>>>>>>>>>>>>>*/
+ 
 
 .admin-main .content .dashboard {
     display: flex;
@@ -390,8 +369,7 @@ body {
 
 
 #imagePreview {
-    background-color: var(--container-color);
-    smoke;
+    background-color: var(--container-color); 
     border-radius: 15px;
     height: 189px;
     width: 175px;
@@ -492,9 +470,7 @@ body {
     overflow-x: hidden;
     white-space: nowrap;
 }
-
-.overdueTbl td .rtn-btn {}
-
+ 
 
 
 /* From Uiverse.io by akshat-patel28 */
@@ -648,6 +624,7 @@ body {
 .admin-main .dashboard .row3 .item {
     display: flex;
     flex-direction: column;
+    
 }
 
 
@@ -681,7 +658,7 @@ body {
 
 .admin-main .dashboard .row3 img {
     background-color: var(--container-color);
-    smoke;
+    /* smoke; */
     border-radius: 15px;
     height: 189px;
     width: 175px;
@@ -729,11 +706,20 @@ body {
     align-items: center;
 }
 
+.spacer{ 
+    height: 100px;
+    display: block;
+    width: 100%;
+    opacity: 0;
+}
+
 
 .admin-main .dashboard .row4 .payment-report {
     height: 200px;
     width: 200px;
 }
+ 
+
 
 .admin-main .dashboard .row4 .book-availability-report {
     height: 200px;
@@ -859,8 +845,8 @@ body {
 }
 
 .nested-book-wrapper .item:hover {
-    background-color: var(--hover-color);
-    !important;
+    background-color: var(--hover-color); 
+    /* !important; */
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px, rgba(244, 227, 227, 0.05) 0px 8px 20px;
     transform: scale(1.005);
     transition: all 0.3s ease;
@@ -1125,6 +1111,10 @@ body {
 
 
 
+.category-report canvas{
+    height: 100% !important;
+    width: 100% !important;
+}
 
 
 
@@ -1148,21 +1138,7 @@ body {
 
 
 }
-
-.admin-main .content .category-wrapper i {}
-
-/* .admin-main .content .category-wrapper select {
  
-    background-color: var(--container-color);
-    all: unset;
-    width: 100%;
-    padding: 4px 12px;
-    cursor: pointer;
-    transition: 0.3s all ease;
-
-} */
-
-
 
 .admin-main .content .category-wrapper select {
     all: unset;
@@ -1400,7 +1376,7 @@ body {
     height: 311px;
     width: 207px;
     background-color: var(--container-color);
-    smoke;
+    /* smoke; */
 
 }
 
@@ -2997,6 +2973,10 @@ img {
         margin-top: 70px;
 
     }
+
+    .row-1 {
+        background-color: red;
+    }
 }
 
 
@@ -3144,7 +3124,7 @@ img {
 @media screen and (min-width: 768px) {
 
 
-
+   
 
     .nav {
         left: 0;
@@ -3191,4 +3171,105 @@ img {
     .nav:hover .nav__dropdown-icon {
         opacity: 1;
     }
+}
+
+
+@media screen and (max-width:480px) {
+    
+.admin-main .content .dashboard .row1 { 
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.admin-main .content .dashboard .row1 .item { 
+    border-radius: 20px;
+    padding: 8px; 
+    
+    max-width: 150px;
+    min-width: 150px;
+
+}
+
+
+
+.admin-main .content .dashboard .row1 span {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.admin-main .content .dashboard .row1 .item div { 
+    justify-content: space-between;
+    width: 100%; 
+
+}
+
+
+.admin-main .content .dashboard .row1 .item i {
+    border-radius: 50%;
+    height: 28px;
+    width: 28px; 
+
+}
+ 
+
+.admin-main .dashboard .row3 img{
+    
+    height: 127px;
+    min-width: 84px;
+}
+
+.admin-main .dashboard .row3 .item .title {
+    /* width: 100%; */
+    width: 110px;
+}
+ 
+
+
+.admin-main .dashboard .row3 .item .author{
+    width: 100%;
+}
+
+
+.admin-main .dashboard .row3 .sec-body { 
+    gap: 15px; 
+}
+
+
+.overdueTbl thead td {
+    white-space: nowrap;       /* Prevent text from wrapping */
+    overflow: hidden;          /* Hide overflow */
+    text-overflow: ellipsis; 
+}
+
+
+
+.admin-main .content .dashboard .row4 span {
+    font-size: 24px; 
+}
+
+.admin-main .dashboard .row4 .payment-report{
+    width: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.payment-chart{
+    width: 150px !important;
+}
+
+
+.admin-main .dashboard .row4 {
+    gap: 25px;
+}
+    
+
+
+.overdueTbl tbody td {
+    white-space: nowrap;       /* Prevent text from wrapping */
+    overflow: hidden;          /* Hide overflow */
+    text-overflow: ellipsis;   /* Show ellipsis */
+}
+
+
 }

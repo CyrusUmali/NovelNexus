@@ -51,13 +51,13 @@
 
 
 
- <h2  >Good Morning</h2>
+ <h2  >Good Mornings</h2>
 
  <div class="label">
 
      <span>Recommendation for you</span>
 
-     <a href="index.php?page=search-book" style="all: unset;"> <span> Show All</span>
+     <a href="index.php?page=search-book"> <span> Show All</span>
      </a>
 
  </div>

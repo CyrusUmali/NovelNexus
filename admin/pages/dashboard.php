@@ -183,8 +183,8 @@
              <div class="body">
 
 
-                 <div class="categoru-report">
-                     <canvas id="categoryChart" width="400" height="200"></canvas>
+                 <div class="category-report">
+                     <canvas id="categoryChart" ></canvas>
                  </div>
 
 
@@ -247,7 +247,7 @@
 
      </div>
 
-     <div class="row2">
+     <div class="row2" >
 
 
          <h3>Payment List</h3>
@@ -288,6 +288,12 @@
 
 
 
+     </div>
+
+     <div class="spacer">
+
+      <h1>Spacer</h1>
+        
      </div>
 
 

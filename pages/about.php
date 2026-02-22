@@ -320,14 +320,13 @@
 </section>
 
 
+<!-- style="margin-top: -50px; padding-bottom: 20px;" -->
 
 
+  <section class="fourth-section" >
 
-
-<!-- <section class="fourth-section" style="margin-top: -50px; padding-bottom: 20px;">
-
-
-    <div class="right" style="padding-right: unset; margin-left: 100px;">
+  <!-- style="" -->
+    <div class="right B" >
 
         <b>Why you should join Us</b> <br>
         <p>
@@ -343,7 +342,7 @@
     <div class="left">
 
 
-        <img style="height: 400px; width: 400px;" src="./resources/library-bg.png" alt="">
+        <img class="join-us"  src="./resources/library-bg.png" alt="">
 
     </div>
 
@@ -352,12 +351,4 @@
 
 
 </section>
-
-<section class="seventh-section">
-
-
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, debitis! Et doloremque ut, sunt minima
-        quos fugit adipisci dolores, sed at temporibus quisquam! Ab qui ratione, similique obcaecati fugit ex.
-    </p>
-
-</section> -->
+ 

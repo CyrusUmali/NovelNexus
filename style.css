@@ -157,6 +157,12 @@ body {
 
 .main .header .right .notifIconDiv i {
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.main .header .right .notifIconDiv i:hover{
+  color: mediumaquamarine;
+
 }
 
 
@@ -175,6 +181,9 @@ body {
 
 }
 
+.main .header .profile i {
+  opacity: 0;
+}
 
 .main .header .profile {
   display: flex;
@@ -207,7 +216,7 @@ body {
 
 .main .header .search-bar {
 
-  background-color: var(--container-color);smoke;
+  background-color: var(--container-color);
 
   width: 400px;
   border-radius: 33px;
@@ -403,8 +412,7 @@ body {
 
 
 
-.main .content .books-wrapper {
-
+.main .content .books-wrapper { 
   color: var(--text-color);
 
 
@@ -465,6 +473,11 @@ body {
   font-size: 20px;
 }
 
+
+.main .content .label a{
+  color: unset;
+  cursor: pointer;
+}
 .main .content .books-wrapper ul {
   list-style: none;
   display: flex;
@@ -950,7 +963,7 @@ body {
   font-size: 14px;
   color: var(--text-color);
   font-weight: 600;
-
+  cursor: pointer;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   transition: all 0.3s ease;
   border-radius: 10px;
@@ -961,8 +974,10 @@ body {
 
 .main .content .category-wrapper select {
   all: unset;
+  cursor: pointer;
   width: 100%;
-  padding: 4px 12px;
+  padding: 4px 0px;
+  text-indent: 10px;
 
 
   /* text-align: center; */
@@ -2453,4 +2468,68 @@ img {
   .nav:hover .nav__dropdown-icon {
     opacity: 1;
   }
+
+
+
+
+
+
+
+
+}
+
+
+@media screen and (max-width: 480px) { 
+
+
+  .main .content .shelf-container .shelf-wrapper { 
+    padding:10px 0px; 
+}
+
+.main .content .shelf-container .shelf-wrapper .item { 
+  padding: 10px; 
+}
+  
+ 
+  .main .content .books-wrapper .title {
+    font-size: 14px; 
+    width: 100%; 
+}
+  
+ 
+.main .content .books-wrapper .author {
+ 
+  width: 100%;  
+}
+
+.main .content .books-wrapper .rating {
+  width: 100%;  
+} 
+.main .content .label { 
+  width: 100%; 
+}
+
+.main .content .books-wrapper ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 10px;  
+}
+
+
+.main .content .books-wrapper ul li { 
+  flex-direction: column;
+  justify-content: start;
+  align-items: center; 
+  padding: 10px;
+  font-size: 14px;  
+  width: 155px;
+}
+ 
+
+
+.main .content .books-wrapper ul li img {
+  height: 200px; 
+}
+
+  
 }
