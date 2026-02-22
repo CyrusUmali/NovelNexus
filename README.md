@@ -20,4 +20,17 @@
 - **User**
   - Email: `sora@gmail.com`
   - Password: `sora`
- 
+
+
+
+
+
+
+
+ <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d9fd2590-1ef8-4332-b687-561a973b799f" />
+
+
+
+
+
+
