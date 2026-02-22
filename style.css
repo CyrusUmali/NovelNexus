@@ -520,7 +520,7 @@ body {
   height: 239px;
   width: 155px;
   border-radius: 10px;
-  background-color: var(--container-color);smoke;
+  background-color: var(--container-color);
 }
 
 
@@ -1272,7 +1272,7 @@ body {
 
 
 .main .home-categories-wrapper .right .item img {
-  background-color: var(--container-color);smoke;
+  background-color: var(--container-color);
   border-radius: 12px;
   width: 96px;
   height: 105px;
